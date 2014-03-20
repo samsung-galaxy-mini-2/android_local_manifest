@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <!-- CM replacements -->
-    <remove-project name="CyanogenMod/android_external_wpa_supplicant_8" />
+    <!-- <remove-project name="CyanogenMod/android_external_wpa_supplicant_8" />
     <remove-project name="CyanogenMod/android_frameworks_av" />
     <remove-project name="CyanogenMod/android_frameworks_native" />
-    <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
+    <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" /> -->
     <project path="external/wpa_supplicant_8" name="legaCyMod/android_external_wpa_supplicant_8" revision="cm-10.1" />
     <project path="frameworks/av" name="legaCyMod/android_frameworks_av" revision="cm-10.1" />
     <project path="frameworks/native" name="legaCyMod/android_frameworks_native" revision="cm-10.1" />
     <project path="hardware/libhardware_legacy" name="legaCyMod/android_hardware_libhardware_legacy" revision="cm-10.1" />
 
     <!-- Local projects -->
-	<project path="hardware/atheros/backports-wireless" name="TheWhisp/android_hardware_atheros_ath6kl" revision="master" />
-    <project path="hardware/atheros/wifi/libs" name="TheWhisp/android_hardware_atheros_wifi_libs" revision="cm-10.1" />
+    <project path="hardware/atheros/ath6kl-compat" name="bleached-/android_hardware_atheros_ath6kl-compat" revision="cm-10.1" />
+    <project path="hardware/atheros/wlan" name="TheWhisp/android_hardware_atheros_wlan" revision="cm-10.1" />
     <project path="hardware/qcom/display-legacy" name="legaCyMod/android_hardware_qcom_display-legacy" revision="cm-10.1" />
     <project path="hardware/qcom/media-legacy" name="legaCyMod/android_hardware_qcom_media-legacy" revision="cm-10.1" />
+
+    <!-- Device Specific -->
+    <project path="device/samsung/msm7x27a-common" name="bleached-/android_device_samsung_msm7x27a-common" revision="cm-10.1" />
+    <project path="device/samsung/jena" name="bleached-/android_device_samsung_s6500" revision="cm-10.1" />
+    <project path="kernel/samsung/msm7x27a" name="bleached-/android_kernel_samsung_msm7x27a" revision="cm-10.1" />
+    <project path="vendor/samsung" name="bleached-/proprietary_vendor_samsung_msm7x27a" revision="jellybean" />
 
 	 <!-- FM Radio -->
     <project path="hardware/qcom/fm" name="legaCyMod/android_hardware_qcom_fm" revision="jellybean" />
