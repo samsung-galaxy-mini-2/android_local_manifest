@@ -5,7 +5,10 @@
     <remove-project name="CyanogenMod/android_frameworks_av" />
     <remove-project name="CyanogenMod/android_frameworks_native" />
     <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
+    <remove-project name="CyanogenMod/android_system_netd" />
+    
     <project path="external/wpa_supplicant_8" name="legaCyMod/android_external_wpa_supplicant_8" revision="cm-10.1" />
+    <project path="system/netd" name="legaCyMod/android_system_netd" revision="cm-10.1" />
     <project path="frameworks/av" name="legaCyMod/android_frameworks_av" revision="cm-10.1" />
     <project path="frameworks/native" name="legaCyMod/android_frameworks_native" revision="cm-10.1" />
     <project path="hardware/libhardware_legacy" name="legaCyMod/android_hardware_libhardware_legacy" revision="cm-10.1" />
