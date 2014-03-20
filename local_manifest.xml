@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
     <!-- CM replacements -->
-    <!-- <remove-project name="CyanogenMod/android_external_wpa_supplicant_8" />
+    <remove-project name="CyanogenMod/android_external_wpa_supplicant_8" />
     <remove-project name="CyanogenMod/android_frameworks_av" />
     <remove-project name="CyanogenMod/android_frameworks_native" />
-    <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" /> -->
+    <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
     <project path="external/wpa_supplicant_8" name="legaCyMod/android_external_wpa_supplicant_8" revision="cm-10.1" />
     <project path="frameworks/av" name="legaCyMod/android_frameworks_av" revision="cm-10.1" />
     <project path="frameworks/native" name="legaCyMod/android_frameworks_native" revision="cm-10.1" />
