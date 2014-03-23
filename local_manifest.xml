@@ -19,9 +19,9 @@
     <project path="hardware/qcom/media-legacy" name="legaCyMod/android_hardware_qcom_media-legacy" revision="cm-10.1" />
 
     <!-- Device Specific -->
-    <project path="device/samsung/msm7x27a-common" name="bleached-/android_device_samsung_msm7x27a-common" revision="cm-10.1" />
-    <project path="device/samsung/jena" name="bleached-/android_device_samsung_s6500" revision="cm-10.1" />
-    <project path="kernel/samsung/msm7x27a" name="bleached-/android_kernel_samsung_msm7x27a" revision="cm-10.1" />
+    <project path="device/samsung/msm7x27a-common" name="bleached-/android_device_samsung_msm7x27a-common" revision="cm-10.1_bluedroid" />
+    <project path="device/samsung/jena" name="bleached-/android_device_samsung_s6500" revision="cm-10.1_bluedroid" />
+    <project path="kernel/samsung/msm7x27a" name="bleached-/android_kernel_samsung_msm7x27a" revision="cm-10.1_bluedroid" />
     <project path="vendor/samsung" name="bleached-/proprietary_vendor_samsung_msm7x27a" revision="jellybean" />
 
 	 <!-- FM Radio -->
