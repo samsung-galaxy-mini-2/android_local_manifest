@@ -1,30 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+
+<remote  name="common"
+        fetch="https://github.com/" />
+
     <!-- CM replacements -->
     <remove-project name="CyanogenMod/android_external_wpa_supplicant_8" />
-    <remove-project name="CyanogenMod/android_frameworks_av" />
-    <remove-project name="CyanogenMod/android_frameworks_native" />
     <remove-project name="CyanogenMod/android_hardware_libhardware_legacy" />
     <remove-project name="CyanogenMod/android_system_netd" />
-    
-    <project path="external/wpa_supplicant_8" name="legaCyMod/android_external_wpa_supplicant_8" revision="cm-10.1" />
-    <project path="system/netd" name="legaCyMod/android_system_netd" revision="cm-10.1" />
-    <project path="frameworks/av" name="legaCyMod/android_frameworks_av" revision="cm-10.1" />
-    <project path="frameworks/native" name="legaCyMod/android_frameworks_native" revision="cm-10.1" />
-    <project path="hardware/libhardware_legacy" name="legaCyMod/android_hardware_libhardware_legacy" revision="cm-10.1" />
+    <remove-project name="AOKP/vendor_samsung" />
+    <!--<remove-project name="AOKP/frameworks_av" />
+    <remove-project name="AOKP/frameworks_native" /> -->
+
+    <project path="external/wpa_supplicant_8" name="legaCyMod/android_external_wpa_supplicant_8" remote="common" revision="cm-10.1" />
+    <project path="system/netd" name="legaCyMod/android_system_netd" remote="common" revision="cm-10.1" />
+    <project path="hardware/libhardware_legacy" name="legaCyMod/android_hardware_libhardware_legacy" remote="common" revision="cm-10.1" />
+    <!--<project path="frameworks/av" name="legaCyMod/android_frameworks_av" remote="common" revision="cm-10.1" />
+    <project path="frameworks/native" name="legaCyMod/android_frameworks_native" remote="common" revision="cm-10.1" /> -->
 
     <!-- Local projects -->
-    <project path="hardware/atheros/wlan" name="TheWhisp/android_hardware_atheros_wlan" revision="cm-10.1" />
-    <project path="hardware/qcom/display-legacy" name="legaCyMod/android_hardware_qcom_display-legacy" revision="cm-10.1" />
-    <project path="hardware/qcom/media-legacy" name="legaCyMod/android_hardware_qcom_media-legacy" revision="cm-10.1" />
+    <project path="hardware/atheros/wlan" name="TheWhisp/android_hardware_atheros_wlan" remote="common" revision="cm-10.1" />
+    <project path="hardware/qcom/display-legacy" name="legaCyMod/android_hardware_qcom_display-legacy" remote="common" revision="cm-10.1" />
+    <project path="hardware/qcom/media-legacy" name="legaCyMod/android_hardware_qcom_media-legacy" remote="common" revision="cm-10.1" />
 
     <!-- Device Specific -->
-    <project path="device/samsung/msm7x27a-common" name="bleached-/android_device_samsung_msm7x27a-common" revision="cm-10.1" />
-    <project path="device/samsung/jena" name="bleached-/android_device_samsung_s6500" revision="cm-10.1" />
-    <project path="kernel/samsung/msm7x27a" name="bleached-/android_kernel_samsung_msm7x27a" revision="cm-10.1" />
-    <project path="vendor/samsung" name="bleached-/proprietary_vendor_samsung_msm7x27a" revision="jellybean" />
+    <project path="device/samsung/msm7x27a-common" name="bleached-/android_device_samsung_msm7x27a-common" remote="common" revision="aokp-jb-mr1" />
+    <project path="device/samsung/jena" name="bleached-/android_device_samsung_s6500" remote="common" revision="aokp-jb-mr1" />
+    <project path="kernel/samsung/msm7x27a" name="bleached-/android_kernel_samsung_msm7x27a" remote="common" revision="cm-10.1" />
+    <project path="vendor/samsung" name="bleached-/proprietary_vendor_samsung_msm7x27a" remote="common" revision="jellybean" />
+    <!--<project path="device/samsung/jena" name="bleached-/android_device_samsung_s6500d" remote="common" revision="aokp-jb-mr1" />-->
 
 	 <!-- FM Radio -->
-    <project path="hardware/qcom/fm" name="legaCyMod/android_hardware_qcom_fm" revision="jellybean" />
-    <project path="packages/apps/FM2" name="legaCyMod/android_packages_apps_FM2" revision="jellybean" />
+    <project path="hardware/qcom/fm" name="legaCyMod/android_hardware_qcom_fm" remote="common" revision="jellybean" />
+    <project path="packages/apps/FM2" name="legaCyMod/android_packages_apps_FM2" remote="common" revision="jellybean" />
 </manifest>
