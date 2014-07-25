@@ -24,11 +24,11 @@
     <project path="hardware/qcom/media-legacy" name="legaCyMod/android_hardware_qcom_media-legacy" remote="common" revision="cm-10.1" />
 
     <!-- Device Specific -->
-    <project path="device/samsung/msm7x27a-common" name="bleached-/android_device_samsung_msm7x27a-common" remote="common" revision="aokp-jb-mr1" />
-    <project path="device/samsung/jena" name="bleached-/android_device_samsung_s6500" remote="common" revision="aokp-jb-mr1" />
+    <project path="device/samsung/msm7x27a-common" name="bleached/android_device_samsung_msm7x27a-common" remote="common" revision="aokp-jb-mr1" />
+    <project path="device/samsung/jena" name="bleached/android_device_samsung_s6500" remote="common" revision="aokp-jb-mr1" />
     <project path="kernel/samsung/msm7x27a" name="bleached-/android_kernel_samsung_msm7x27a" remote="common" revision="cm-10.1" />
-    <project path="vendor/samsung" name="bleached-/proprietary_vendor_samsung_msm7x27a" remote="common" revision="jellybean" />
-    <!--<project path="device/samsung/jenad" name="bleached-/android_device_samsung_s6500d" remote="common" revision="aokp-jb-mr1" />-->
+    <project path="vendor/samsung" name="bleached/proprietary_vendor_samsung_msm7x27a" remote="common" revision="jellybean" />
+    <project path="device/samsung/jenad" name="bleached-/android_device_samsung_s6500d" remote="common" revision="aokp-jb-mr1" />
 
 	 <!-- FM Radio -->
     <project path="hardware/qcom/fm" name="legaCyMod/android_hardware_qcom_fm" remote="common" revision="jellybean" />
