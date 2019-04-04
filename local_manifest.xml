@@ -14,7 +14,7 @@
     <project path="hardware/libhardware_legacy" name="samsung-galaxy-mini-2/android_hardware_libhardware_legacy" revision="cm-10.1" />
 
     <!-- Local projects -->
-    <project path="hardware/atheros/wlan" name="samsung-galaxy-mini-2/android_hardware_atheros_wlan" revision="cm-10.1" />
+    <project path="hardware/atheros/wlan" name="samsung-galaxy-mini-2/android_hardware_atheros_wlan" revision="master" />
     <project path="hardware/qcom/display-legacy" name="samsung-galaxy-mini-2/android_hardware_qcom_display-legacy" revision="cm-10.1" />
     <project path="hardware/qcom/media-legacy" name="samsung-galaxy-mini-2/android_hardware_qcom_media-legacy" revision="cm-10.1" />
 
